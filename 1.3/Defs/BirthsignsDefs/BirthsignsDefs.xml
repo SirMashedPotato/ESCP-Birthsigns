@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ESCP_Birthsigns.BirthsignsDef>
+		<defName>ESCP_StandardBirthsigns</defName>
+		<label>ESCP - RimWorld style Birthsigns</label>
+		<description>Birthsigns from Elder Scrolls, modified to fit into RimWorld.</description>
+		<birthsignHediffs>
+			<li>
+				<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
+				<li>MorrowRim_BonewalkerImbuement_Chills</li>
+				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Strength</li>
+			</li>
+			<li>
+				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Endurance</li>
+				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</li>
+				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</li>
+			</li>
+			<li>
+				<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
+				<li>MorrowRim_BonewalkerImbuement_Chills</li>
+				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Strength</li>
+			</li>
+			<li>
+				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Endurance</li>
+				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</li>
+				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</li>
+			</li>
+		</birthsignHediffs>
+		<additionalSigns>
+			<li>MorrowRim_BonewalkerImbuement_GraveCurse_Endurance</li>
+		</additionalSigns>
+		<additionalSignsChance>0.08</additionalSignsChance>
+	</ESCP_Birthsigns.BirthsignsDef>
+</Defs>

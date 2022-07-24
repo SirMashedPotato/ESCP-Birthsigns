@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ESCP - Sload</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ESCP_SloadRace"]</xpath>
+					<value>
+						<li Class="ESCP_Birthsigns.BirthsignExclusion"/>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
