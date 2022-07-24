@@ -6,28 +6,28 @@
 		<description>Birthsigns from Elder Scrolls, modified to fit into RimWorld.</description>
 		<birthsignHediffs>
 			<li>
-				<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
-				<li>MorrowRim_BonewalkerImbuement_Chills</li>
-				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Strength</li>
+				<li>ESCP_Birthsign_TheRitual_RimWorld</li>
+				<li>ESCP_Birthsign_TheLover_RimWorld</li>
+				<li>ESCP_Birthsign_TheLord_RimWorld</li>
 			</li>
 			<li>
-				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Endurance</li>
-				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</li>
-				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</li>
+				<li>ESCP_Birthsign_TheMage_RimWorld</li>
+				<li>ESCP_Birthsign_TheShadow_RimWorld</li>
+				<li>ESCP_Birthsign_TheSteed_RimWorld</li>
 			</li>
 			<li>
-				<li>MorrowRim_BonewalkerImbuement_BrownRot</li>
-				<li>MorrowRim_BonewalkerImbuement_Chills</li>
-				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Strength</li>
+				<li>ESCP_Birthsign_TheApprentice_RimWorld</li>
+				<li>ESCP_Birthsign_TheWarrior_RimWorld</li>
+				<li>ESCP_Birthsign_TheLady_RimWorld</li>
 			</li>
 			<li>
-				<li>MorrowRim_BonewalkerImbuement_DreadCurse_Endurance</li>
-				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Speed</li>
-				<li>MorrowRim_BonewalkerImbuement_GraveCurse_Strength</li>
+				<li>ESCP_Birthsign_TheTower_RimWorld</li>
+				<li>ESCP_Birthsign_TheAtronach_RimWorld</li>
+				<li>ESCP_Birthsign_TheThief_RimWorld</li>
 			</li>
 		</birthsignHediffs>
 		<additionalSigns>
-			<li>MorrowRim_BonewalkerImbuement_GraveCurse_Endurance</li>
+			<li>ESCP_Birthsign_TheSerpent_RimWorld</li>
 		</additionalSigns>
 		<additionalSignsChance>0.08</additionalSignsChance>
 	</ESCP_Birthsigns.BirthsignsDef>
