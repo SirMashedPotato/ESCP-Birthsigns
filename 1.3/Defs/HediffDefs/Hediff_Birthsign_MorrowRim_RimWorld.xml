@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[The Ritual]========== -->
+	<!--
+		Spell:
+			Turn undead 100 points????
+		Power:
+			Restore health - 100 points
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheRitual_RimWorld</defName>
+		<label>birthsign (The Ritual)</label>
+		<description>Those born under the sign of The Ritual are able to instantly restore their health once per day.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<comps>
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Lover]========== -->
+	<!--
+		Passive:
+			Fortify agility - 25 points
+		Power:
+			Paralyze target - 60 seconds, Damage fatigue - 200 points on self
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheLover_RimWorld</defName>
+		<label>birthsign (The Lover)</label>
+		<description>Those born under the sign of The Lover boast fortified agility, and are able to paralyze a target once per day.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>2.5</MeleeHitChance>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+					<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Lord]========== -->
+	<!--
+		Passive:
+			Weakness to fire - 100%
+		Spell:
+			Restore health - 2 points for 30 seconds, 30 second cooldown, consumes hunger?
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheLord_RimWorld</defName>
+		<label>birthsign (The Lord)</label>
+		<description>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<Flammability>1</Flammability>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Mage]========== -->
+	<!--
+		Soft requires Royalty
+		Passive:
+			Fortify maximum magicka by 0.5x INT
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheMage_RimWorld</defName>
+		<label>birthsign (The Mage)</label>
+		<description>Those born under the sign of The Mage have an increased neural heat limit, adding additional scaling based on their intellectual skill level.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<comps>
+			<!-- 
+				potential comp to display current effect 
+				Stating it does nothing if you don't have Royalty
+			-->
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Shadow]========== -->
+	<!--
+		Soft requires Royalty
+		Power:
+			Invisibility for 60 seconds
+				Ability disabled if Royalty not enabled
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheShadow_RimWorld</defName>
+		<label>birthsign (The Shadow)</label>
+		<description>Those born under the sign of The Shadow are able to blend into their surroundings once per day.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<comps>
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Steed]========== -->
+	<!--
+		Passive:
+			Fortify speed - 25 points
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheSteed_RimWorld</defName>
+		<label>birthsign (The Steed)</label>
+		<description>Those born under the sign of The Steed boast fortified speed.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Apprentice]========== -->
+	<!--
+		Passive:
+			Fortify maximum magicka by 1.5x INT
+			Weakness to magicka - 50%
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheApprentice_RimWorld</defName>
+		<label>birthsign (The Apprentice)</label>
+		<description>Those born under the sign of The Mage have a greatly increased neural heat limit, adding additional scaling based on their intellectual skill level, but are also more susceptible to psychic effects.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<!-- 
+				potential comp to display current effect 
+				Stating it does nothing if you don't have Royalty
+			-->
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Warrior]========== -->
+	<!--
+		Passive:
+			Fortify attack - 10 points
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheWarrior_RimWorld</defName>
+		<label>birthsign (The Warrior)</label>
+		<description>Those born under the sign of The Warrior boast fortified attack.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>10</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Lady]========== -->
+	<!--
+		Passive:
+			Fortify personality - 25 points
+			Fortify endurance - 25 points
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheLady_RimWorld</defName>
+		<label>birthsign (The Lady)</label>
+		<description>Those born under the sign of The Lady boast fortified personality and endurance.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<restFallFactor>0.75</restFallFactor>
+				<statOffsets>
+					<NegotiationAbility>0.25</NegotiationAbility>
+					<TradePriceImprovement>0.25</TradePriceImprovement>
+					<SocialImpact>0.25</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Tower]========== -->
+	<!--
+
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheTower_RimWorld</defName>
+		<label>birthsign (The Tower)</label>
+		<description>Those born under the sign of The Tower are able to discover .</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<comps>
+
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Atronach]========== -->
+	<!--
+		Passive:
+			Fortify maximum magicka by 2x INT
+			Absorb to magicka - 50%
+			Stunted magicka
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheAtronach_RimWorld</defName>
+		<label>birthsign (The Atronach)</label>
+		<description>Those born under the sign of The Atronach have a massively increased neural heat limit, adding additional scaling based on their intellectual skill level. However they can no longer naturally dissipate neural heat, which is instead dissipated when they recieve damage.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statFactors>
+					<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0</PsychicEntropyRecoveryRate>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<!-- 
+				potential comp to display current effect 
+				Stating it does nothing if you don't have Royalty
+				
+				Comp to dissipate neural heat when damaged, based on damage amount
+			-->
+		</comps>
+	</HediffDef>
+	<!-- ==========[The Thief]========== -->
+	<!--
+		Passive:
+			Fortify personality - 25 points
+			Fortify endurance - 25 points
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheThief_RimWorld</defName>
+		<label>birthsign (The Thief)</label>
+		<description>Those born under the sign of The Thief boast increased evasiveness.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Serpent]========== -->
+	<!--
+		Spell:
+			Poison target - 3 points for 30 seconds, Damage self - 1 point for 30 seconds
+	-->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheSerpent_RimWorld</defName>
+		<label>birthsign (The Serpent)</label>
+		<description>Those born under the wandering sign of The Serpent are are able to poison targets, damaging themselves in the process.</description>
+		<descriptionHyperlinks>
+		</descriptionHyperlinks>
+		<comps>
+		</comps>
+	</HediffDef>
+</Defs>

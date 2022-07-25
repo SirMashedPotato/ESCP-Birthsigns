@@ -19,29 +19,33 @@ namespace ESCP_Birthsigns
     public static class PawnGenerator_GenerateInitialHediffs_Patch
     {
         [HarmonyPostfix]
-        public static void BirthsignPatch(Pawn pawn, PawnGenerationRequest request)
+        public static void BirthsignPatch(Pawn pawn)
         {
-            if (pawn.RaceProps.Humanlike && BirthsignExclusion.Get(pawn.def) == null)
+            if (!BirthSigns_ModSettings.DisableEntirely && BirthSigns_ModSettings.CurrentSetDef != null)
             {
-                BirthsignsDef signs = BirthsignsDefOf.ESCP_StandardBirthsigns;
-                HediffDef signDef;
-                if (!signs.additionalSigns.NullOrEmpty() && Rand.Chance(signs.additionalSignsChance))
+                if (pawn.RaceProps.Humanlike && (BirthsignExclusion.Get(pawn.def) == null || BirthSigns_ModSettings.AllowDisabledRaces))
                 {
-                    signDef = signs.additionalSigns.RandomElement();
-                }
-                else
-                {
-                    int quadrum = (int)pawn.ageTracker.BirthQuadrum;
-                    int day = pawn.ageTracker.BirthDayOfYear;
-                    int monthIndex = day;
-                    while (monthIndex - 15 > -1)    ///-1 to account for the possibility of an index of exactly 0 for 60 days
+
+                    BirthsignSetDef signs = BirthSigns_ModSettings.CurrentSetDef;
+                    HediffDef signDef;
+                    if (!signs.additionalSigns.NullOrEmpty() && Rand.Chance(signs.additionalSignsChance))
                     {
-                        monthIndex -= 15;
+                        signDef = signs.additionalSigns.RandomElement();
                     }
-                    monthIndex /= 5;
-                    signDef = signs.birthsignHediffs[quadrum][monthIndex];
+                    else
+                    {
+                        int quadrum = (int)pawn.ageTracker.BirthQuadrum;
+                        int day = pawn.ageTracker.BirthDayOfYear;
+                        int monthIndex = day;
+                        while (monthIndex - 15 > -1)    ///-1 to account for the possibility of an index of exactly 0 for 60 days
+                        {
+                            monthIndex -= 15;
+                        }
+                        monthIndex /= 5;
+                        signDef = signs.birthsignHediffs[quadrum][monthIndex];
+                    }
+                    pawn.health.AddHediff(signDef);
                 }
-                pawn.health.AddHediff(signDef);
             }
         }
     }

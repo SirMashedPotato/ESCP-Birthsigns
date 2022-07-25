@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ESCP_Birthsigns.BirthsignSetDef>
+		<defName>ESCP_MorrowRimBirthsigns_RimWorld</defName>
+		<label>MorrowRim - RimWorld style Birthsigns</label>
+		<description>Birthsigns from Morrowind, modified to fit into RimWorld.</description>
+		<birthsignHediffs>
+			<li>
+				<li>MorrowRim_Birthsign_TheRitual_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheLover_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheLord_RimWorld</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheMage_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheShadow_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheSteed_RimWorld</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheApprentice_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheWarrior_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheLady_RimWorld</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheTower_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheAtronach_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheThief_RimWorld</li>
+			</li>
+		</birthsignHediffs>
+		<additionalSigns>
+			<li>MorrowRim_Birthsign_TheSerpent_RimWorld</li>
+		</additionalSigns>
+		<additionalSignsChance>0.08</additionalSignsChance>
+	</ESCP_Birthsigns.BirthsignSetDef>
+</Defs>
