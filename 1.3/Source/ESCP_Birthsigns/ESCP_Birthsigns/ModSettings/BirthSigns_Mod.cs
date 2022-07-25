@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Verse;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -51,13 +50,15 @@ namespace ESCP_Birthsigns
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
-            listing_Standard.Gap();
             if (!flag)
             {
                 listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_A".Translate(settings.ESCP_BirthSigns_CurrentSetDef.label));
                 listing_Standard.Label(settings.ESCP_BirthSigns_CurrentSetDef.description);
+                listing_Standard.GapLine();
                 BirthsignSetDetails_StandardSigns(listing_Standard);
+                listing_Standard.GapLine();
                 BirthsignSetDetails_AdditionalSigns(listing_Standard);
+                listing_Standard.GapLine();
             }
 
             listing_Standard.End();
