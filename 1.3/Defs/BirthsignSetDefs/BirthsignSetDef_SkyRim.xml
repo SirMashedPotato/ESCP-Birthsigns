@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ESCP_Birthsigns.BirthsignSetDef>
-		<defName>ESCP_BestOfBirthsigns_RimWorld</defName>
-		<label>ESCP Best Of - RimWorld style Birthsigns</label>
-		<description>Community selected set of birthsigns, modified to fit into RimWorld.</description>
+		<defName>ESCP_SkyRimBirthsigns_RimWorld</defName>
+		<label>SkyRim - RimWorld style Birthsigns</label>
+		<description>Birthsigns from Skyrim, modified to fit into RimWorld.</description>
 		<birthsignHediffs>
 			<li>
 				<li>MorrowRim_Birthsign_TheRitual_RimWorld</li>
