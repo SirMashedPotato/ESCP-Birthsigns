@@ -3,14 +3,14 @@
 	<!-- ==========[The Ritual]========== -->
 	<!--
 		Spell:
-			Turn undead 100 points????
+			Turn undead(insectoid) 100 points
 		Power:
 			Restore health - 100 points
 	-->
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheRitual_RimWorld</defName>
 		<label>birthsign (The Ritual)</label>
-		<description>Those born under the sign of The Ritual are able to instantly restore their health once per day.</description>
+		<description>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<comps>
