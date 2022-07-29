@@ -106,7 +106,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheSteed_RimWorld</defName>
 		<label>birthsign (The Steed)</label>
-		<description>Those born under the sign of The Steed boast fortified speed.</description>
+		<description>Those born under the sign of The Steed are masters of moving from one place to the other, though they tend to become restless easily.\n\n&lt;color=#E5E54C&gt;Charioteer&lt;/color&gt;\nThe moving capacity is increased by 25%.</description>
 		<stages>
 			<li>
 				<capMods>
@@ -151,7 +151,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheWarrior_RimWorld</defName>
 		<label>birthsign (The Warrior)</label>
-		<description>Those born under the sign of The Warrior boast fortified attack.</description>
+		<description>Those born under the sign of The Warrior are naturally gifted with melee weapons, and are able to hit even the most nimble of targets.\n\n&lt;color=#E5E54C&gt;Warwyrd&lt;/color&gt;\nMelee hit chance is increased by 10 points.</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -171,7 +171,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheLady_RimWorld</defName>
 		<label>birthsign (The Lady)</label>
-		<description>Those born under the sign of The Lady boast fortified personality and endurance.</description>
+		<description>Those born under the sign of The Lady are said to be some of the most caring and tolerant. They can solve many situations with words alone, and are tireless in their quest to help others.\n\n&lt;color=#E5E54C&gt;Lady's Favor&lt;/color&gt;\nNegotiation ability is increased by 25%.\nTrade prices are improved by 25%.\nSocial impact is increased by 25%.\n\n&lt;color=#E5E54C&gt;Lady's Grace&lt;/color&gt;\nFatigue gain is decreased by 25%.</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -237,7 +237,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheThief_RimWorld</defName>
 		<label>birthsign (The Thief)</label>
-		<description>Those born under the sign of The Thief boast increased evasiveness.</description>
+		<description>Those born under the sign of The Thief are prone to taking risks, though seem to never fall victim to the dangers those risks impose. Many belive these individuals to be cursed, that their luck will eventually fail at the worst time.\n\n&lt;color=#E5E54C&gt;Akaviri Danger Sense&lt;/color&gt;\nMelee dodge chance is increased by 10 points.\nTrap spring chance is decreased by 10%.</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>

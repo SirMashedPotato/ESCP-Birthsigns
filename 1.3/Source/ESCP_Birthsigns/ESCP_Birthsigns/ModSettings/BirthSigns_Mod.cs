@@ -2,6 +2,7 @@
 using Verse;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace ESCP_Birthsigns
 {
@@ -41,6 +42,9 @@ namespace ESCP_Birthsigns
 
             listing_Standard.GapLine();
             listing_Standard.Gap();
+
+            listing_Standard.Label("ESCP_BirthSigns_ChanceHasSign".Translate() + " (" + settings.ESCP_BirthSigns_ChanceHasSign * 100 + "%)");
+            settings.ESCP_BirthSigns_ChanceHasSign = (float)Math.Round(listing_Standard.Slider(settings.ESCP_BirthSigns_ChanceHasSign, 0f, 1f) * 20) / 20;
 
             listing_Standard.CheckboxLabeled("ESCP_BirthSigns_DisableEntirely".Translate(), ref settings.ESCP_BirthSigns_DisableEntirely);
             listing_Standard.Gap();

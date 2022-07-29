@@ -21,7 +21,7 @@ namespace ESCP_Birthsigns
         [HarmonyPostfix]
         public static void BirthsignPatch(Pawn pawn)
         {
-            if (!BirthSigns_ModSettings.DisableEntirely && BirthSigns_ModSettings.CurrentSetDef != null)
+            if (!BirthSigns_ModSettings.DisableEntirely && BirthSigns_ModSettings.CurrentSetDef != null && Rand.Chance(BirthSigns_ModSettings.ChanceHasSign))
             {
                 if (pawn.RaceProps.Humanlike && (BirthsignExclusion.Get(pawn.def) == null || BirthSigns_ModSettings.AllowDisabledRaces))
                 {

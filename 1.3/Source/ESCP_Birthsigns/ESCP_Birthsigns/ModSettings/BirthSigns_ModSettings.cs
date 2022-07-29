@@ -11,6 +11,7 @@ namespace ESCP_Birthsigns
         public static bool AllowDisabledRaces => _instance.ESCP_BirthSigns_AllowDisabledRaces;
         public static bool DisableEntirely => _instance.ESCP_BirthSigns_DisableEntirely;
         public static string CurrentSetDef_String => _instance.ESCP_BirthSigns_CurrentSetDef_String;
+        public static float ChanceHasSign => _instance.ESCP_BirthSigns_ChanceHasSign;
         public static BirthsignSetDef CurrentSetDef
         {
             get
@@ -28,6 +29,7 @@ namespace ESCP_Birthsigns
         public bool ESCP_BirthSigns_AllowDisabledRaces = false;
         public bool ESCP_BirthSigns_DisableEntirely = false;
         public string ESCP_BirthSigns_CurrentSetDef_String = null;
+        public float ESCP_BirthSigns_ChanceHasSign = 1f;
         /// <summary>
         /// Never actually saved, as defs aren't loaded until after settings apparently
         /// Instead saved using 'ESCP_BirthSigns_CurrentSetDef_String'
@@ -44,6 +46,7 @@ namespace ESCP_Birthsigns
         {
             Scribe_Values.Look(ref ESCP_BirthSigns_AllowDisabledRaces, "ESCP_BirthSigns_AllowDisabledRaces", false);
             Scribe_Values.Look(ref ESCP_BirthSigns_DisableEntirely, "ESCP_BirthSigns_DisableEntirely", false);
+            Scribe_Values.Look(ref ESCP_BirthSigns_ChanceHasSign, "ESCP_BirthSigns_ChanceHasSign", 1f);
             if (ESCP_BirthSigns_CurrentSetDef != null)
             {
                 Log.Message("3: String set to current def");

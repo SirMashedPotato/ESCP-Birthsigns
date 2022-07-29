@@ -13,6 +13,7 @@
 	
 	<ESCP_BirthSigns_ActiveSet>Active birthsign set</ESCP_BirthSigns_ActiveSet>
 	
+	<ESCP_BirthSigns_ChanceHasSign>The chance a pawn is generated with a birthsign</ESCP_BirthSigns_ChanceHasSign>
 	<ESCP_BirthSigns_DisableEntirely>Disable the birthsign system entirely</ESCP_BirthSigns_DisableEntirely>
 	<ESCP_BirthSigns_AllowDisabledRaces>Enable all races receiving birthsigns</ESCP_BirthSigns_AllowDisabledRaces>
 	<ESCP_BirthSigns_AllowDisabledRaces_Tooltip>By default certain races will not receive them when pawns of these races are generated.\n\nThis affects:</ESCP_BirthSigns_AllowDisabledRaces_Tooltip>
