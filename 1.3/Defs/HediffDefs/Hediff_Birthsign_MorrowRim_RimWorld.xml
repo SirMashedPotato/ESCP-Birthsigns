@@ -73,14 +73,13 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheMage_RimWorld</defName>
 		<label>birthsign (The Mage)</label>
-		<description>Those born under the sign of The Mage have an increased neural heat limit, adding additional scaling based on their intellectual skill level.</description>
-		<descriptionHyperlinks>
-		</descriptionHyperlinks>
+		<description>Those born under the sign of The Mage are adept at utilising psycasts, though they are often easily distracted, and tend to be somewhat arrogant.\n\n&lt;color=#E5E54C&gt;Fay&lt;/color&gt;\nMaximum neural heat limit is increased by 50% of the pawns Intellectual skill.</description>
 		<comps>
-			<!-- 
-				potential comp to display current effect 
-				Stating it does nothing if you don't have Royalty
-			-->
+			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ScaledStatOffset" MayRequire="Ludeon.RimWorld.Royalty">
+				<skillDef>Intellectual</skillDef>
+				<statDef>PsychicEntropyMax</statDef>
+				<factor>0.5</factor>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Shadow]========== -->
@@ -132,9 +131,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheApprentice_RimWorld</defName>
 		<label>birthsign (The Apprentice)</label>
-		<description>Those born under the sign of The Mage have a greatly increased neural heat limit, adding additional scaling based on their intellectual skill level, but are also more susceptible to psychic effects.</description>
-		<descriptionHyperlinks>
-		</descriptionHyperlinks>
+		<description>Those born under the sign of The Apprentice are highly skilled at utilising psycasts. Though this is usually a double-edged sword, as they often have an increased sensitivity to psychic energy.\n\n&lt;color=#E5E54C&gt;Elfborn&lt;/color&gt;\nMaximum neural heat limit is increased by 100% of the pawns Intellectual skill.\nPsychic sensitivity is increased by 50%, this bonus increase does not increase maximum neural heat.</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -143,10 +140,11 @@
 			</li>
 		</stages>
 		<comps>
-			<!-- 
-				potential comp to display current effect 
-				Stating it does nothing if you don't have Royalty
-			-->
+			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ScaledStatOffset" MayRequire="Ludeon.RimWorld.Royalty">
+				<skillDef>Intellectual</skillDef>
+				<statDef>PsychicEntropyMax</statDef>
+				<factor>1</factor>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Warrior]========== -->
@@ -202,7 +200,6 @@
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<comps>
-
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Atronach]========== -->
@@ -215,9 +212,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheAtronach_RimWorld</defName>
 		<label>birthsign (The Atronach)</label>
-		<description>Those born under the sign of The Atronach have a massively increased neural heat limit, adding additional scaling based on their intellectual skill level. However they can no longer naturally dissipate neural heat, which is instead dissipated when they recieve damage.</description>
-		<descriptionHyperlinks>
-		</descriptionHyperlinks>
+		<description>Those born under the sign of The Atronach are among the most dangerous of psycasters, though they are unable to dissipate neural heat on their own.\n\n&lt;color=#E5E54C&gt;Wormburn&lt;/color&gt;\nMaximum neural heat limit is increased by 200% of the pawns Intellectual skill.\nReduces neural heat by 50% of damage taken.\nCompletely unable to dissipate neural heat over time.</description>
 		<stages>
 			<li>
 				<statFactors>
@@ -226,12 +221,15 @@
 			</li>
 		</stages>
 		<comps>
-			<!-- 
-				potential comp to display current effect 
-				Stating it does nothing if you don't have Royalty
-				
-				Comp to dissipate neural heat when damaged, based on damage amount
-			-->
+			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ScaledStatOffset" MayRequire="Ludeon.RimWorld.Royalty">
+				<skillDef>Intellectual</skillDef>
+				<statDef>PsychicEntropyMax</statDef>
+				<factor>2</factor>
+			</li>
+			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_DissipateNeuralHeat" MayRequire="Ludeon.RimWorld.Royalty">
+				<chance>1</chance>
+				<factor>0.5</factor>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Thief]========== -->
