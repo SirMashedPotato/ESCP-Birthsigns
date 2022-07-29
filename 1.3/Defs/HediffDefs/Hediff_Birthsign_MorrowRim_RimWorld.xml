@@ -107,8 +107,6 @@
 		<defName>MorrowRim_Birthsign_TheSteed_RimWorld</defName>
 		<label>birthsign (The Steed)</label>
 		<description>Those born under the sign of The Steed boast fortified speed.</description>
-		<descriptionHyperlinks>
-		</descriptionHyperlinks>
 		<stages>
 			<li>
 				<capMods>
@@ -119,8 +117,6 @@
 				</capMods>
 			</li>
 		</stages>
-		<comps>
-		</comps>
 	</HediffDef>
 	<!-- ==========[The Apprentice]========== -->
 	<!--
@@ -131,7 +127,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheApprentice_RimWorld</defName>
 		<label>birthsign (The Apprentice)</label>
-		<description>Those born under the sign of The Apprentice are highly skilled at utilising psycasts. Though this is usually a double-edged sword, as they often have an increased sensitivity to psychic energy.\n\n&lt;color=#E5E54C&gt;Elfborn&lt;/color&gt;\nMaximum neural heat limit is increased by 100% of the pawns Intellectual skill.\nPsychic sensitivity is increased by 50%, this bonus increase does not increase maximum neural heat.</description>
+		<description>Those born under the sign of The Apprentice are highly skilled at utilising psycasts. Though this is usually a double-edged sword, as they often have an increased sensitivity to psychic energy.\n\n&lt;color=#E5E54C&gt;Elfborn&lt;/color&gt;\nMaximum neural heat limit is increased by 150% of the pawns Intellectual skill.\nPsychic sensitivity is increased by 50%, this bonus does not increase maximum neural heat.</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -143,7 +139,7 @@
 			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ScaledStatOffset" MayRequire="Ludeon.RimWorld.Royalty">
 				<skillDef>Intellectual</skillDef>
 				<statDef>PsychicEntropyMax</statDef>
-				<factor>1</factor>
+				<factor>1.5</factor>
 			</li>
 		</comps>
 	</HediffDef>

@@ -63,6 +63,7 @@
     <Compile Include="HediffComp\Properties\HediffCompProperties_ScaledStatOffset.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_BirthsignScaledStatOffset.cs" />
+    <Compile Include="StatPart\StatPart_TheApprenticeNegation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

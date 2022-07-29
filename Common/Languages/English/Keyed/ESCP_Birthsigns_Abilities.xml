@@ -4,6 +4,7 @@
     xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
 	<!-- Stat offsets -->
 	<ESCP_BirthSigns_StatsReport_ScaledStatOffset>Offset from birthsign</ESCP_BirthSigns_StatsReport_ScaledStatOffset>
+	<ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>Negated bonus from The Apprentice</ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>
 	<!-- HediffComp tip strings -->
 	<ESCP_BirthSigns_TipString_DissipateNeuralHeat>Dissipate neural heat: {0} damage</ESCP_BirthSigns_TipString_DissipateNeuralHeat>
 	<ESCP_BirthSigns_TipString_ScaledStatOffset>{0}: {1} {2}</ESCP_BirthSigns_TipString_ScaledStatOffset>

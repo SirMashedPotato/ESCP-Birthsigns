@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ESCP_Birthsigns_Abilities
 {
-    public class StatPart_BirthsignScaledStatOffset : StatPart
+    class StatPart_TheApprenticeNegation : StatPart
     {
         public override void TransformValue(StatRequest req, ref float val)
         {
@@ -14,7 +14,7 @@ namespace ESCP_Birthsigns_Abilities
             {
                 return;
             }
-            val += this.StatFactor(pawn);
+            val -= this.StatFactor(pawn);
         }
 
         public float StatFactor(Pawn pawn)
@@ -25,10 +25,16 @@ namespace ESCP_Birthsigns_Abilities
                 if (!hList.NullOrEmpty())
                 {
                     float offset = 0;
-                    foreach(Hediff h in hList)
+                    foreach (Hediff h in hList)
                     {
-                        HediffComp_ScaledStatOffset comp = h.TryGetComp<HediffComp_ScaledStatOffset>();
-                        offset += (baseFactor * (comp.Props.factor * pawn.skills.GetSkill(comp.Props.skillDef).Level));
+                        if (pawn.def.statBases.Find(x => x.stat == StatDefOf.PsychicEntropyMax) != null)
+                        {
+                            offset += (negateOffset * pawn.def.statBases.Find(x => x.stat == StatDefOf.PsychicEntropyMax).value);
+                        } 
+                        else
+                        {
+                            offset += (StatDefOf.PsychicEntropyMax.defaultBaseValue * negateOffset);
+                        }
                     }
                     return offset;
                 }
@@ -41,25 +47,12 @@ namespace ESCP_Birthsigns_Abilities
             Pawn pawn;
             if (req.HasThing && (pawn = (req.Thing as Pawn)) != null)
             {
-                return "ESCP_BirthSigns_StatsReport_ScaledStatOffset".Translate() + (": " + this.StatFactor(pawn).ToString());
+                return "ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus".Translate() + (": " + this.StatFactor(pawn).ToString());
             }
             return null;
         }
 
-        public override IEnumerable<string> ConfigErrors()
-        {
-            foreach (string text in base.ConfigErrors())
-            {
-                yield return text;
-            }
-            if (hediffs.NullOrEmpty())
-            {
-                yield return "hediff list is null or empty";
-            }
-            //listed hediff doesn't have comp
-        }
-
-        private float baseFactor = 1f;
+        private float negateOffset = 0.5f;
         private List<HediffDef> hediffs;
     }
 }

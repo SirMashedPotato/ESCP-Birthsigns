@@ -26,6 +26,12 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/StatDef[defName="PsychicEntropyMax"]/parts</xpath>
 					<value>
+						<li Class="ESCP_Birthsigns_Abilities.StatPart_TheApprenticeNegation">
+							<negateOffset>0.5</negateOffset>
+							<hediffs>
+								<li>MorrowRim_Birthsign_TheApprentice_RimWorld</li>
+							</hediffs>
+						</li>
 						<li Class="ESCP_Birthsigns_Abilities.StatPart_BirthsignScaledStatOffset">
 							<baseFactor>5</baseFactor>	<!-- Translates to 5 points per level of Intellectual * HediffComp_ScaledStatOffset.Props.factor -->
 							<hediffs>
