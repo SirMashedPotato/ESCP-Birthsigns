@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>ESCP_Birthsigns_AbilityGroup_LesserPower</defName>
+		<cooldownTicks>1250</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>ESCP_Birthsigns_AbilityGroup_GreaterPower</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+</Defs>

@@ -26,8 +26,9 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheLover_RimWorld</defName>
 		<label>birthsign (The Lover)</label>
-		<description>Those born under the sign of The Lover boast fortified agility, and are able to paralyze a target once per day.</description>
+		<description>Those born under the sign of The Lover are both nimble and accurate,and are able to leave other pawns paralyzed.\n\n&lt;color=#E5E54C&gt;Mooncalf&lt;/color&gt;\nMelee hit chance is increased by 2.5 points.\nMelee dodge chance is increased by 2.5 points.\nShooting accuracy is increased by 2.5 points.\n\n&lt;color=#E5E54C&gt;Lover's Kiss&lt;/color&gt;\nOnce a day, stun a target for a lengthy amount of time, fatiguing self slightly in the process.</description>
 		<descriptionHyperlinks>
+			<AbilityDef>MorrowRim_BirthsignAbility_TheLover_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
 		<stages>
 			<li>
@@ -39,6 +40,9 @@
 			</li>
 		</stages>
 		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>MorrowRim_BirthsignAbility_TheLover_RimWorld</abilityDef>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Lord]========== -->
@@ -237,7 +241,7 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheThief_RimWorld</defName>
 		<label>birthsign (The Thief)</label>
-		<description>Those born under the sign of The Thief are prone to taking risks, though seem to never fall victim to the dangers those risks impose. Many belive these individuals to be cursed, that their luck will eventually fail at the worst time.\n\n&lt;color=#E5E54C&gt;Akaviri Danger Sense&lt;/color&gt;\nMelee dodge chance is increased by 10 points.\nTrap spring chance is decreased by 10%.</description>
+		<description>Those born under the sign of The Thief are prone to taking risks, though seem to never fall victim to the dangers those risks impose. Many believe these individuals to be cursed, that their luck will eventually fail at the worst time.\n\n&lt;color=#E5E54C&gt;Akaviri Danger Sense&lt;/color&gt;\nMelee dodge chance is increased by 10 points.\nTrap spring chance is decreased by 10%.</description>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -257,10 +261,15 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheSerpent_RimWorld</defName>
 		<label>birthsign (The Serpent)</label>
-		<description>Those born under the wandering sign of The Serpent are are able to poison targets, damaging themselves in the process.</description>
+		<description>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.\n\n&lt;color=#E5E54C&gt;Star Curse&lt;/color&gt;\nInflict a deadly poison on a target, causing constant toxic buildup for 30 seconds. The caster is also poisoned, causing constant toxic buildup for 10 seconds.</description>
 		<descriptionHyperlinks>
+			<AbilityDef>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</AbilityDef>
+			<HediffDef>MorrowRim_Birthsign_StarCurse_RimWorld</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</abilityDef>
+			</li>
 		</comps>
 	</HediffDef>
 </Defs>

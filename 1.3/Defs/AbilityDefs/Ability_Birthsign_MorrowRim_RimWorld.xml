@@ -1,4 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+	<!-- ==========[The Lover]========== -->
+	<!--
+		TODO
+			Mote on adding hediff
+			warmupSound
+			warmupMoteSocialSymbol
+	-->
+	<AbilityDef>
+		<defName>MorrowRim_BirthsignAbility_TheLover_RimWorld</defName>
+		<label>lover's kiss</label>
+		<description>Stun a target for a lengthy amount of time, fatiguing the caster slightly in the process.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_GreaterPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheLover</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheLover</warmupMoteSocialSymbol>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<stunTargetWhileCasting>False</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<uiOrder>1</uiOrder>
+		<comps>
+			<li Class="ESCP_Birthsigns_Abilities.CompProperties_AbilityApplyDamage">
+				<compClass>ESCP_Birthsigns_Abilities.CompAbilityEffect_ApplyDamage</compClass>
+				<damageDef>Stun</damageDef>
+				<damageAmount>25</damageAmount>
+			</li>
+			<li Class="ESCP_Birthsigns_Abilities.CompProperties_AbilityFatigueSelf">
+				<compClass>ESCP_Birthsigns_Abilities.CompAbilityEffect_FatigueSelf</compClass>
+				<amount>0.2</amount>
+				<disableIfLow>True</disableIfLow>
+			</li>
+		</comps>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>15</range>
+			<warmupTime>2.0</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<neverTargetHostileFaction>false</neverTargetHostileFaction>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<!-- ==========[The Serpent]========== -->
+	<!--
+		TODO
+			Mote on adding hediff
+			warmupSound
+			warmupMoteSocialSymbol
+	-->
+	<AbilityDef>
+		<defName>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</defName>
+		<label>star curse</label>
+		<description>Inflict strong poison onto a target, causing constant toxic buildup for 30 seconds to both the target and the caster.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_LesserPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignSpell_MorrowRim_TheSerpent</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignSpell_MorrowRim_TheSerpent</warmupMoteSocialSymbol>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<stunTargetWhileCasting>False</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<uiOrder>1</uiOrder>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>ESCP_Birthsigns_Abilities.CompAbilityEffect_GiveHediff_StarCurse</compClass>
+				<hediffDef>MorrowRim_Birthsign_StarCurse_RimWorld</hediffDef>
+				<applicableToMechs>false</applicableToMechs>
+			</li>
+		</comps>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>9</range>
+			<warmupTime>2.0</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<neverTargetHostileFaction>false</neverTargetHostileFaction>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
 </Defs>

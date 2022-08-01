@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[The Serpent]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_StarCurse_RimWorld</defName>
+		<label>star poison</label>
+		<description>Strong poison in the bloodstream, causes constant toxic buildup for 30 seconds.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ConstantBuildup">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<amountPerSecond>0.03</amountPerSecond>
+				<ticksPer>60</ticksPer>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

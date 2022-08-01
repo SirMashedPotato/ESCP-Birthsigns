@@ -57,8 +57,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_ApplyDamage.cs" />
+    <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_FatigueSelf.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityApplyDamage.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityDamageSelf.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityFatigueSelf.cs" />
+    <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_GiveHediff_StarCurse.cs" />
+    <Compile Include="HediffComp\HediffComp_ConstantBuildup.cs" />
     <Compile Include="HediffComp\HediffComp_DissipateNeuralHeat.cs" />
     <Compile Include="HediffComp\HediffComp_ScaledStatOffset.cs" />
+    <Compile Include="HediffComp\Properties\HediffCompProperties_ConstantBuildup.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_DissipateNeuralHeat.cs" />
     <Compile Include="HediffComp\Properties\HediffCompProperties_ScaledStatOffset.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Harmony\" />
+    <Folder Include="Verbs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
