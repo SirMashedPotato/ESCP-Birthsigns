@@ -8,6 +8,7 @@
 	<ESCP_Birthsigns_ActiveDetails_B>Season based birthsigns:</ESCP_Birthsigns_ActiveDetails_B>
 	<ESCP_Birthsigns_ActiveDetails_C>Random non-season based birthsigns:</ESCP_Birthsigns_ActiveDetails_C>
 	<ESCP_Birthsigns_ActiveDetails_D>Chance any pawn has a random non-season based birthsign: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_D>
+	<ESCP_Birthsigns_ActiveDetails_E>Default chance a pawn has a birthsign: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_E>
 	<!-- Settings -->
 	<ESCP_BirthsignsFramework_ModName>ESCP - Birthsigns Framework</ESCP_BirthsignsFramework_ModName>
 	

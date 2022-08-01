@@ -30,5 +30,6 @@
 			<li>MorrowRim_Birthsign_TheSerpent_RimWorld</li>
 		</additionalSigns>
 		<additionalSignsChance>0.08</additionalSignsChance>
+		<hasBirthsign_DefaultChance>0.25</hasBirthsign_DefaultChance>
 	</ESCP_Birthsigns.BirthsignSetDef>
 </Defs>

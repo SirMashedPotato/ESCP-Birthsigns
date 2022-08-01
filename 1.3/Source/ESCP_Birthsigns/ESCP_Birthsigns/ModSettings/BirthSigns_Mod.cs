@@ -63,6 +63,8 @@ namespace ESCP_Birthsigns
                 listing_Standard.GapLine();
                 BirthsignSetDetails_AdditionalSigns(listing_Standard);
                 listing_Standard.GapLine();
+                listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_E".Translate(settings.ESCP_BirthSigns_CurrentSetDef.hasBirthsign_DefaultChance.ToStringPercent()));
+                listing_Standard.GapLine();
             }
 
             listing_Standard.End();
@@ -79,6 +81,7 @@ namespace ESCP_Birthsigns
                     delegate ()
                     {
                         settings.ESCP_BirthSigns_CurrentSetDef = bdef;
+                        settings.ESCP_BirthSigns_ChanceHasSign = bdef.hasBirthsign_DefaultChance;
                     });
             }
         }
