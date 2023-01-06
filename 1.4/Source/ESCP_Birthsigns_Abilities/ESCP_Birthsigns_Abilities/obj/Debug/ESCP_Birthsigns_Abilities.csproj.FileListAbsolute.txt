@@ -2,3 +2,7 @@ J:\Modding\Github\ESCP-Birthsigns\1.3\Assemblies\ESCP_Birthsigns_Abilities.dll
 J:\Modding\Github\ESCP-Birthsigns\1.3\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.csproj.AssemblyReference.cache
 J:\Modding\Github\ESCP-Birthsigns\1.3\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.csproj.CoreCompileInputs.cache
 J:\Modding\Github\ESCP-Birthsigns\1.3\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.dll
+J:\Modding\Github\ESCP-Birthsigns\1.4\Assemblies\ESCP_Birthsigns_Abilities.dll
+J:\Modding\Github\ESCP-Birthsigns\1.4\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.csproj.AssemblyReference.cache
+J:\Modding\Github\ESCP-Birthsigns\1.4\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.csproj.CoreCompileInputs.cache
+J:\Modding\Github\ESCP-Birthsigns\1.4\Source\ESCP_Birthsigns_Abilities\ESCP_Birthsigns_Abilities\obj\Debug\ESCP_Birthsigns_Abilities.dll
