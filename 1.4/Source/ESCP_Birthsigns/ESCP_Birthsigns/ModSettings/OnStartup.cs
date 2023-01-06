@@ -42,13 +42,10 @@ namespace ESCP_Birthsigns
             {
                 if (defs.Find(x=>x.defName.ToString() == BirthSigns_ModSettings.CurrentSetDef_String) != null)
                 {
-                    Log.Message("1: Current def set to string");
                     BirthSigns_ModSettings.CurrentSetDef = defs.Find(x => x.defName.ToString() == BirthSigns_ModSettings.CurrentSetDef_String);
                 } 
                 else
                 {
-                    Log.Message("2: Current def set to first");
-                    //send message reset
                     BirthSigns_ModSettings.CurrentSetDef = defs.First();
                 }
             }

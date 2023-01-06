@@ -67,11 +67,12 @@
   <ItemGroup>
     <Compile Include="DefModExtension\BirthsignExclusion.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Harmony\QuadrumNamesPatch.cs" />
     <Compile Include="ModSettings\BirthSigns_Mod.cs" />
     <Compile Include="ModSettings\BirthSigns_ModSettings.cs" />
     <Compile Include="ModSettings\OnStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThingDef\BirthsignSetDef.cs" />
+    <Compile Include="Def\BirthsignSetDef.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -3,6 +3,7 @@ using Verse;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using RimWorld;
 
 namespace ESCP_Birthsigns
 {
@@ -49,6 +50,9 @@ namespace ESCP_Birthsigns
             listing_Standard.CheckboxLabeled("ESCP_BirthSigns_DisableEntirely".Translate(), ref settings.ESCP_BirthSigns_DisableEntirely);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_BirthSigns_DisableCustomQuadrumNames".Translate(), ref settings.ESCP_BirthSigns_DisableCustomQuadrumNames, "ESCP_BirthSigns_DisableCustomQuadrumNames_Tooltip".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_BirthSigns_AllowDisabledRaces".Translate(), ref settings.ESCP_BirthSigns_AllowDisabledRaces, 
                 "ESCP_BirthSigns_AllowDisabledRaces_Tooltip".Translate() + OnStartup.DisabledRaces);
             listing_Standard.Gap();
@@ -65,6 +69,11 @@ namespace ESCP_Birthsigns
                 listing_Standard.GapLine();
                 listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_E".Translate(settings.ESCP_BirthSigns_CurrentSetDef.hasBirthsign_DefaultChance.ToStringPercent()));
                 listing_Standard.GapLine();
+                if (settings.ESCP_BirthSigns_CurrentSetDef.QuadrumNameReplacerValid())
+                {
+                    BirthsignSetDetails_QuadrumNameReplacers(listing_Standard);
+                    listing_Standard.GapLine();
+                }
             }
 
             listing_Standard.End();
@@ -120,6 +129,16 @@ namespace ESCP_Birthsigns
             else
             {
                 listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_D".Translate(BirthSigns_ModSettings.CurrentSetDef.additionalSignsChance.ToStringPercent()));
+            }
+        }
+
+        public static void BirthsignSetDetails_QuadrumNameReplacers(Listing_Standard listing_Standard)
+        {
+            listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_F".Translate());
+            BirthsignSetDef setDef = BirthSigns_ModSettings.CurrentSetDef;
+            for (int i = 0; i <= 3; i++)
+            {
+                listing_Standard.Label(" - " + setDef.overridenQuadrumNames[i] + " (" + setDef.overridenQuadrumNamesShort[i] + ")");
             }
         }
     }
