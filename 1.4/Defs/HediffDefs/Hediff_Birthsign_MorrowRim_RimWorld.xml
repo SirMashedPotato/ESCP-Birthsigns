@@ -30,7 +30,7 @@
 		<description>Those born under the sign of The Lover are both nimble and accurate, and are able to leave other pawns paralyzed.\n\n&lt;color=#E5E54C&gt;Mooncalf&lt;/color&gt;\nMelee hit chance is increased by 2.5 points.\nMelee dodge chance is increased by 2.5 points.\nShooting accuracy is increased by 2.5 points.\n\n&lt;color=#E5E54C&gt;Lover's Kiss&lt;/color&gt;\nOnce a day, stun a target for a lengthy amount of time, fatiguing self slightly in the process.</description>
 		<descriptionShort>Those born under the sign of The Lover are both nimble and accurate, and are able to leave other pawns paralyzed.</descriptionShort>
 		<descriptionHyperlinks>
-			<AbilityDef>MorrowRim_BirthsignAbility_TheLover_RimWorld</AbilityDef>
+			<AbilityDef>MorrowRim_BirthsignAbility_LoversKiss_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
 		<stages>
 			<li>
@@ -43,7 +43,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>MorrowRim_BirthsignAbility_TheLover_RimWorld</abilityDef>
+				<abilityDef>MorrowRim_BirthsignAbility_LoversKiss_RimWorld</abilityDef>
 			</li>
 		</comps>
 	</HediffDef>
@@ -57,9 +57,10 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheLord_RimWorld</defName>
 		<label>birthsign (The Lord)</label>
-		<description>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</description>
+		<description>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.\n\n&lt;color=#E5E54C&gt;Blood of the North&lt;/color&gt;\nIncrease wound healing rate for 30 seconds.\n\n&lt;color=#E5E54C&gt;Trollkin&lt;/color&gt;\nFlammability is increased by 100%.</description>
 		<descriptionShort>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</descriptionShort>
 		<descriptionHyperlinks>
+			<AbilityDef>MorrowRim_BirthsignAbility_BloodOfTheNorth_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
 		<stages>
 			<li>
@@ -69,6 +70,9 @@
 			</li>
 		</stages>
 		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>MorrowRim_BirthsignAbility_BloodOfTheNorth_RimWorld</abilityDef>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Mage]========== -->
@@ -276,12 +280,12 @@
 		<description>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.\n\n&lt;color=#E5E54C&gt;Star Curse&lt;/color&gt;\nInflict a deadly poison on a target, causing constant toxic buildup for 30 seconds. The caster is also poisoned, causing constant toxic buildup for 10 seconds.</description>
 		<descriptionShort>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.</descriptionShort>
 		<descriptionHyperlinks>
-			<AbilityDef>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</AbilityDef>
+			<AbilityDef>MorrowRim_BirthsignAbility_StarCurse_RimWorld</AbilityDef>
 			<HediffDef>MorrowRim_Birthsign_StarCurse_RimWorld</HediffDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</abilityDef>
+				<abilityDef>MorrowRim_BirthsignAbility_StarCurse_RimWorld</abilityDef>
 			</li>
 		</comps>
 	</HediffDef>

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[The Lord]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_BloodOfTheNorth_RimWorld</defName>
+		<label>blood of the north</label>
+		<description>Regenerative energy in the bloodstream, boosting the rate this pawn heals injuries for 30 seconds.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>1</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 	<!-- ==========[The Serpent]========== -->
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_StarCurse_RimWorld</defName>

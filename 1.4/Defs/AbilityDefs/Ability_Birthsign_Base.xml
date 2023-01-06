@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[The ESCP_BirthsignAbility_TargetedBase]========== -->
+	<AbilityDef Name="ESCP_BirthsignAbility_TargetedBase" Abstract="True">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<stunTargetWhileCasting>False</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<uiOrder>1</uiOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>9</range>
+			<warmupTime>2.0</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<neverTargetHostileFaction>false</neverTargetHostileFaction>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+	<!-- ==========[The ESCP_BirthsignAbility_SelfBase]========== -->
+	<AbilityDef Name="ESCP_BirthsignAbility_SelfBase" ParentName="ESCP_BirthsignAbility_TargetedBase" Abstract="True">
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<statBases>
+		  <Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<range>0</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams Inherit="False">
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>
