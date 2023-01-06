@@ -56,7 +56,7 @@ namespace ESCP_Birthsigns
             listing_Standard.GapLine();
             if (!flag)
             {
-                listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_A".Translate(settings.ESCP_BirthSigns_CurrentSetDef.label));
+                listing_Standard.Label("ESCP_Birthsigns_ActiveDetails_A".Translate(settings.ESCP_BirthSigns_CurrentSetDef.label + " (" + settings.ESCP_BirthSigns_CurrentSetDef.modContentPack.Name + ")"));
                 listing_Standard.Label(settings.ESCP_BirthSigns_CurrentSetDef.description);
                 listing_Standard.GapLine();
                 BirthsignSetDetails_StandardSigns(listing_Standard);

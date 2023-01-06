@@ -11,6 +11,7 @@
 		<defName>MorrowRim_Birthsign_TheRitual_RimWorld</defName>
 		<label>birthsign (The Ritual)</label>
 		<description>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.</description>
+		<descriptionShort>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<comps>
@@ -26,7 +27,8 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheLover_RimWorld</defName>
 		<label>birthsign (The Lover)</label>
-		<description>Those born under the sign of The Lover are both nimble and accurate,and are able to leave other pawns paralyzed.\n\n&lt;color=#E5E54C&gt;Mooncalf&lt;/color&gt;\nMelee hit chance is increased by 2.5 points.\nMelee dodge chance is increased by 2.5 points.\nShooting accuracy is increased by 2.5 points.\n\n&lt;color=#E5E54C&gt;Lover's Kiss&lt;/color&gt;\nOnce a day, stun a target for a lengthy amount of time, fatiguing self slightly in the process.</description>
+		<description>Those born under the sign of The Lover are both nimble and accurate, and are able to leave other pawns paralyzed.\n\n&lt;color=#E5E54C&gt;Mooncalf&lt;/color&gt;\nMelee hit chance is increased by 2.5 points.\nMelee dodge chance is increased by 2.5 points.\nShooting accuracy is increased by 2.5 points.\n\n&lt;color=#E5E54C&gt;Lover's Kiss&lt;/color&gt;\nOnce a day, stun a target for a lengthy amount of time, fatiguing self slightly in the process.</description>
+		<descriptionShort>Those born under the sign of The Lover are both nimble and accurate, and are able to leave other pawns paralyzed.</descriptionShort>
 		<descriptionHyperlinks>
 			<AbilityDef>MorrowRim_BirthsignAbility_TheLover_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
@@ -56,6 +58,7 @@
 		<defName>MorrowRim_Birthsign_TheLord_RimWorld</defName>
 		<label>birthsign (The Lord)</label>
 		<description>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</description>
+		<descriptionShort>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -78,6 +81,7 @@
 		<defName>MorrowRim_Birthsign_TheMage_RimWorld</defName>
 		<label>birthsign (The Mage)</label>
 		<description>Those born under the sign of The Mage are adept at utilising psycasts, though they are often easily distracted, and tend to be somewhat arrogant.\n\n&lt;color=#E5E54C&gt;Fay&lt;/color&gt;\nMaximum neural heat limit is increased by 50% of the pawns Intellectual skill.</description>
+		<descriptionShort>Those born under the sign of The Mage are adept at utilising psycasts, though they are often easily distracted, and tend to be somewhat arrogant.</descriptionShort>
 		<comps>
 			<li Class="ESCP_Birthsigns_Abilities.HediffCompProperties_ScaledStatOffset" MayRequire="Ludeon.RimWorld.Royalty">
 				<skillDef>Intellectual</skillDef>
@@ -97,6 +101,7 @@
 		<defName>MorrowRim_Birthsign_TheShadow_RimWorld</defName>
 		<label>birthsign (The Shadow)</label>
 		<description>Those born under the sign of The Shadow are able to blend into their surroundings once per day.</description>
+		<descriptionShort>Those born under the sign of The Shadow are able to blend into their surroundings once per day.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<comps>
@@ -111,6 +116,7 @@
 		<defName>MorrowRim_Birthsign_TheSteed_RimWorld</defName>
 		<label>birthsign (The Steed)</label>
 		<description>Those born under the sign of The Steed are masters of moving from one place to the other, though they tend to become restless easily.\n\n&lt;color=#E5E54C&gt;Charioteer&lt;/color&gt;\nThe moving capacity is increased by 25%.</description>
+		<descriptionShort>Those born under the sign of The Steed are masters of moving from one place to the other, though they tend to become restless easily.</descriptionShort>
 		<stages>
 			<li>
 				<capMods>
@@ -132,6 +138,7 @@
 		<defName>MorrowRim_Birthsign_TheApprentice_RimWorld</defName>
 		<label>birthsign (The Apprentice)</label>
 		<description>Those born under the sign of The Apprentice are highly skilled at utilising psycasts. Though this is usually a double-edged sword, as they often have an increased sensitivity to psychic energy.\n\n&lt;color=#E5E54C&gt;Elfborn&lt;/color&gt;\nMaximum neural heat limit is increased by 150% of the pawns Intellectual skill.\nPsychic sensitivity is increased by 50%, this bonus does not increase maximum neural heat.</description>
+		<descriptionShort>Those born under the sign of The Apprentice are highly skilled at utilising psycasts. Though this is usually a double-edged sword, as they often have an increased sensitivity to psychic energy.</descriptionShort>
 		<stages>
 			<li>
 				<statOffsets>
@@ -156,6 +163,7 @@
 		<defName>MorrowRim_Birthsign_TheWarrior_RimWorld</defName>
 		<label>birthsign (The Warrior)</label>
 		<description>Those born under the sign of The Warrior are naturally gifted with melee weapons, and are able to hit even the most nimble of targets.\n\n&lt;color=#E5E54C&gt;Warwyrd&lt;/color&gt;\nMelee hit chance is increased by 10 points.</description>
+		<descriptionShort>Those born under the sign of The Warrior are naturally gifted with melee weapons, and are able to hit even the most nimble of targets.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -176,6 +184,7 @@
 		<defName>MorrowRim_Birthsign_TheLady_RimWorld</defName>
 		<label>birthsign (The Lady)</label>
 		<description>Those born under the sign of The Lady are said to be some of the most caring and tolerant. They can solve many situations with words alone, and are tireless in their quest to help others.\n\n&lt;color=#E5E54C&gt;Lady's Favor&lt;/color&gt;\nNegotiation ability is increased by 25%.\nTrade prices are improved by 25%.\nSocial impact is increased by 25%.\n\n&lt;color=#E5E54C&gt;Lady's Grace&lt;/color&gt;\nFatigue gain is decreased by 25%.</description>
+		<descriptionShort>Those born under the sign of The Lady are said to be some of the most caring and tolerant. They can solve many situations with words alone, and are tireless in their quest to help others.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -196,7 +205,8 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheTower_RimWorld</defName>
 		<label>birthsign (The Tower)</label>
-		<description>Those born under the sign of The Tower are able to discover .</description>
+		<description>Those born under the sign of The Tower are able to discover valuable items where others would not even consider looking.</description>
+		<descriptionShort>Those born under the sign of The Tower are able to discover valuable items where others would not even consider looking.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<comps>
@@ -213,6 +223,7 @@
 		<defName>MorrowRim_Birthsign_TheAtronach_RimWorld</defName>
 		<label>birthsign (The Atronach)</label>
 		<description>Those born under the sign of The Atronach are among the most dangerous of psycasters, though they are unable to dissipate neural heat on their own.\n\n&lt;color=#E5E54C&gt;Wormburn&lt;/color&gt;\nMaximum neural heat limit is increased by 200% of the pawns Intellectual skill.\nReduces neural heat by 50% of damage taken.\nCompletely unable to dissipate neural heat over time.</description>
+		<descriptionShort>Those born under the sign of The Atronach are among the most dangerous of psycasters, though they are unable to dissipate neural heat on their own.</descriptionShort>
 		<stages>
 			<li>
 				<statFactors>
@@ -242,6 +253,7 @@
 		<defName>MorrowRim_Birthsign_TheThief_RimWorld</defName>
 		<label>birthsign (The Thief)</label>
 		<description>Those born under the sign of The Thief are prone to taking risks, though seem to never fall victim to the dangers those risks impose. Many believe these individuals to be cursed, that their luck will eventually fail at the worst time.\n\n&lt;color=#E5E54C&gt;Akaviri Danger Sense&lt;/color&gt;\nMelee dodge chance is increased by 10 points.\nTrap spring chance is decreased by 10%.</description>
+		<descriptionShort>Those born under the sign of The Thief are prone to taking risks, though seem to never fall victim to the dangers those risks impose. Many believe these individuals to be cursed, that their luck will eventually fail at the worst time.</descriptionShort>
 		<descriptionHyperlinks>
 		</descriptionHyperlinks>
 		<stages>
@@ -262,6 +274,7 @@
 		<defName>MorrowRim_Birthsign_TheSerpent_RimWorld</defName>
 		<label>birthsign (The Serpent)</label>
 		<description>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.\n\n&lt;color=#E5E54C&gt;Star Curse&lt;/color&gt;\nInflict a deadly poison on a target, causing constant toxic buildup for 30 seconds. The caster is also poisoned, causing constant toxic buildup for 10 seconds.</description>
+		<descriptionShort>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.</descriptionShort>
 		<descriptionHyperlinks>
 			<AbilityDef>MorrowRim_BirthsignAbility_TheSerpent_RimWorld</AbilityDef>
 			<HediffDef>MorrowRim_Birthsign_StarCurse_RimWorld</HediffDef>

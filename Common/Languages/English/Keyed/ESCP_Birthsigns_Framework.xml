@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<LanguageData
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+<LanguageData>
 
 	<!-- Info -->
 	<ESCP_Birthsigns_ActiveDetails_A>The currently active birthsign set is: &lt;color=#E5E54C&gt;{0}&lt;/color&gt;</ESCP_Birthsigns_ActiveDetails_A>

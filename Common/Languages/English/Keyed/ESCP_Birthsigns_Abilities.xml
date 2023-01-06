@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<LanguageData
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+<LanguageData>
 	<!-- Stat offsets -->
 	<ESCP_BirthSigns_StatsReport_ScaledStatOffset>Offset from birthsign</ESCP_BirthSigns_StatsReport_ScaledStatOffset>
 	<ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>Negated bonus from The Apprentice</ESCP_BirthSigns_StatsReport_NegatedApprenticeBonus>
 	<!-- HediffComp tip strings -->
-	<ESCP_BirthSigns_TipString_DissipateNeuralHeat>Dissipate neural heat: {0} damage</ESCP_BirthSigns_TipString_DissipateNeuralHeat>
-	<ESCP_BirthSigns_TipString_ScaledStatOffset>{0}: +{1} {2}</ESCP_BirthSigns_TipString_ScaledStatOffset>
+	<ESCP_BirthSigns_TipString_DissipateNeuralHeat> - Dissipate neural heat: {0} damage</ESCP_BirthSigns_TipString_DissipateNeuralHeat>
+	<ESCP_BirthSigns_TipString_ScaledStatOffset> - {0}: +{1} {2}</ESCP_BirthSigns_TipString_ScaledStatOffset>
 	<!-- Ability tip strings -->
 	<ESCP_BirthSigns_TipString_AbilityDamage>Inflicts {0} points of {1} damage</ESCP_BirthSigns_TipString_AbilityDamage>
 	<ESCP_BirthSigns_TipString_AbilityDamageSelf>Inflicts {0} points of {1} damage to caster</ESCP_BirthSigns_TipString_AbilityDamageSelf>
