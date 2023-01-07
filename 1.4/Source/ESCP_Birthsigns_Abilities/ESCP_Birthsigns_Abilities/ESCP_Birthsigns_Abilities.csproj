@@ -59,10 +59,12 @@
   <ItemGroup>
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_ApplyDamage.cs" />
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_FatigueSelf.cs" />
+    <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_HealWounds.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityApplyDamage.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityDamageSelf.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityFatigueSelf.cs" />
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_GiveHediff_StarCurse.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityHealWounds.cs" />
     <Compile Include="HediffComp\HediffComp_ConstantBuildup.cs" />
     <Compile Include="HediffComp\HediffComp_DissipateNeuralHeat.cs" />
     <Compile Include="HediffComp\HediffComp_ScaledStatOffset.cs" />
@@ -72,13 +74,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatPart\StatPart_BirthsignScaledStatOffset.cs" />
     <Compile Include="StatPart\StatPart_TheApprenticeNegation.cs" />
+    <Compile Include="Verbs\Verb_CastAbility_OnInsectoid.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Harmony\" />
-    <Folder Include="Verbs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

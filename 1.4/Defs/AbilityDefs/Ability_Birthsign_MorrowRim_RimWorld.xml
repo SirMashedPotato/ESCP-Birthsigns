@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ==========[The Ritual]========== -->
+	<!--
+		TODO
+			Mote on adding hediff
+			warmupSound
+			warmupMoteSocialSymbol
+	-->
+	<AbilityDef ParentName="ESCP_BirthsignAbility_TargetedBase">
+		<defName>MorrowRim_BirthsignAbility_BlessedWord_RimWorld</defName>
+		<label>blessed word</label>
+		<description>Once a day, call upon the blessed words of The Ritual, making the targeted insectoid flee in terror for 30 seconds.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_LesserPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignSpell_MorrowRim_TheRitual</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignSpell_MorrowRim_TheRitual</warmupMoteSocialSymbol>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<comps>
+			<li Class="CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<!-- Probably not ideal, as they will leave the map -->
+				<stateDef>PanicFlee</stateDef>
+				<applyToSelf>false</applyToSelf>
+			</li>
+		</comps>
+		<verbProperties>
+			<verbClass>ESCP_Birthsigns_Abilities.Verb_CastAbility_OnInsectoid</verbClass>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="ESCP_BirthsignAbility_SelfBase">
+		<defName>MorrowRim_BirthsignAbility_MarasGift_RimWorld</defName>
+		<label>Mara's gift</label>
+		<description>Once a quadrum, call upon the power of Mara, instantly healing 100 points of damage across random wounds.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_GreaterPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheRitual</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheRitual</warmupMoteSocialSymbol>
+		<comps>
+			<li Class="ESCP_Birthsigns_Abilities.CompProperties_AbilityHealWounds">
+				<compClass>ESCP_Birthsigns_Abilities.CompAbilityEffect_HealWounds</compClass>
+				<totalSeverityToHeal>100</totalSeverityToHeal>
+			</li>
+		</comps>
+	</AbilityDef>
 	<!-- ==========[The Lover]========== -->
 	<!--
 		TODO

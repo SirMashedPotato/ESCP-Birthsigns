@@ -10,11 +10,19 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheRitual_RimWorld</defName>
 		<label>birthsign (The Ritual)</label>
-		<description>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.</description>
+		<description>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.\n\n&lt;color=#E5E54C&gt;Blessed Word&lt;/color&gt;\nOnce a day, make an insectoid flee in terror for 30 seconds.\n\n&lt;color=#E5E54C&gt;Mara's Gift&lt;/color&gt;\nOnce a quadrum, instantly heal up to 100 points of damage across random wounds.</description>
 		<descriptionShort>Those born under the sign of The Ritual are said to be blessed by Mara. They able to instantly restore their health once per day, and can make insectoids flee in terror.</descriptionShort>
 		<descriptionHyperlinks>
+			<AbilityDef>MorrowRim_BirthsignAbility_BlessedWord_RimWorld</AbilityDef>
+			<AbilityDef>MorrowRim_BirthsignAbility_MarasGift_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
 		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDefs>
+					<li>MorrowRim_BirthsignAbility_BlessedWord_RimWorld</li>
+					<li>MorrowRim_BirthsignAbility_MarasGift_RimWorld</li>
+				</abilityDefs>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Lover]========== -->
