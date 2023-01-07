@@ -2,10 +2,10 @@
 <Defs>
 	<AbilityGroupDef>
 		<defName>ESCP_Birthsigns_AbilityGroup_LesserPower</defName>
-		<cooldownTicks>1250</cooldownTicks>
+		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
 	<AbilityGroupDef>
 		<defName>ESCP_Birthsigns_AbilityGroup_GreaterPower</defName>
-		<cooldownTicks>60000</cooldownTicks>
+		<cooldownTicks>900000</cooldownTicks>
 	</AbilityGroupDef>
 </Defs>

@@ -5,9 +5,7 @@
 		<defName>MorrowRim_Birthsign_BloodOfTheNorth_RimWorld</defName>
 		<label>blood of the north</label>
 		<description>Regenerative energy in the bloodstream, boosting the rate this pawn heals injuries for 30 seconds.</description>
-		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
-		<isBad>true</isBad>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>True</showRemainingTime>
@@ -22,12 +20,27 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<!-- ==========[The Shadow]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_Moonshadow_RimWorld</defName>
+		<label>moonshadow</label>
+		<description>Strange shadows have formed around the caster, making them completely invisible for 15 seconds.</description>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties">
+				<compClass>HediffComp_Invisibility</compClass>
+			</li>
+		</comps>
+	</HediffDef>
 	<!-- ==========[The Serpent]========== -->
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_StarCurse_RimWorld</defName>
 		<label>star poison</label>
 		<description>Strong poison in the bloodstream, causes constant toxic buildup for 30 seconds.</description>
-		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
 		<isBad>true</isBad>
 		<comps>
