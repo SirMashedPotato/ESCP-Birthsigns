@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_ApplyDamage.cs" />
+    <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_CreateQuest.cs" />
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_FatigueSelf.cs" />
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_HealWounds.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityApplyDamage.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityCreateQuest.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityDamageSelf.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityFatigueSelf.cs" />
     <Compile Include="Abilities\AbilityEffect\CompAbilityEffect_GiveHediff_StarCurse.cs" />

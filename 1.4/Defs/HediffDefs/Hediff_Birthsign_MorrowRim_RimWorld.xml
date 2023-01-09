@@ -221,11 +221,15 @@
 	<HediffDef ParentName="ESCP_BirthsignBase">
 		<defName>MorrowRim_Birthsign_TheTower_RimWorld</defName>
 		<label>birthsign (The Tower)</label>
-		<description>Those born under the sign of The Tower are able to discover valuable items where others would not even consider looking.</description>
+		<description>Those born under the sign of The Tower are able to discover valuable items where others would not even consider looking.\n\n&lt;color=#E5E54C&gt;Tower Key&lt;/color&gt;\nOnce a quadrum, discover the location of an item stash.</description>
 		<descriptionShort>Those born under the sign of The Tower are able to discover valuable items where others would not even consider looking.</descriptionShort>
 		<descriptionHyperlinks>
+			<AbilityDef>MorrowRim_BirthsignAbility_TowerKey_RimWorld</AbilityDef>
 		</descriptionHyperlinks>
 		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>MorrowRim_BirthsignAbility_TowerKey_RimWorld</abilityDef>
+			</li>
 		</comps>
 	</HediffDef>
 	<!-- ==========[The Atronach]========== -->

@@ -97,6 +97,51 @@
 			<Ability_Duration>30</Ability_Duration>
 		</statBases>
 	</AbilityDef>
+	<!-- ==========[The Shadow]========== -->
+	<!--
+		TODO
+			Mote on adding hediff
+			warmupSound
+			warmupMoteSocialSymbol
+	-->
+	<AbilityDef ParentName="ESCP_BirthsignAbility_SelfBase">
+		<defName>MorrowRim_BirthsignAbility_Moonshadow_RimWorld</defName>
+		<label>moonshadow</label>
+		<description>Once a quadrum, call upon the power of The Shadow, causing the caster to become invisible for 60 seconds.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_GreaterPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheShadow</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheShadow</warmupMoteSocialSymbol>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>MorrowRim_Birthsign_Moonshadow_RimWorld</hediffDef>
+			</li>
+		</comps>
+		<statBases>
+			<Ability_Duration>60</Ability_Duration>
+		</statBases>
+	</AbilityDef>
+	<!-- ==========[The Tower]========== -->
+	<!--
+		TODO
+			Mote on adding hediff
+			warmupSound
+			warmupMoteSocialSymbol
+	-->
+	<AbilityDef ParentName="ESCP_BirthsignAbility_SelfBase">
+		<defName>MorrowRim_BirthsignAbility_TowerKey_RimWorld</defName>
+		<label>tower key</label>
+		<description>Once a quadrum, call upon the guidance of The Tower, gaining knowledge of the location of an item stash in the process.</description>
+		<groupDef>ESCP_Birthsigns_AbilityGroup_GreaterPower</groupDef>
+		<iconPath>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheTower</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheTower</warmupMoteSocialSymbol>
+		<comps>
+			<li Class="ESCP_Birthsigns_Abilities.CompProperties_AbilityCreateQuest">
+				<compClass>ESCP_Birthsigns_Abilities.CompAbilityEffect_CreateQuest</compClass>
+				<questScript>OpportunitySite_ItemStash</questScript>
+			</li>
+		</comps>
+	</AbilityDef>
 	<!-- ==========[The Serpent]========== -->
 	<!--
 		TODO
@@ -120,30 +165,6 @@
 		</comps>
 		<statBases>
 			<Ability_Duration>30</Ability_Duration>
-		</statBases>
-	</AbilityDef>
-	<!-- ==========[The Shadow]========== -->
-	<!--
-		TODO
-			Mote on adding hediff
-			warmupSound
-			warmupMoteSocialSymbol
-	-->
-	<AbilityDef ParentName="ESCP_BirthsignAbility_SelfBase">
-		<defName>MorrowRim_BirthsignAbility_Moonshadow_RimWorld</defName>
-		<label>moonshadow</label>
-		<description>Once a quadrum, call upon the power of The Shadow, causing the caster to become invisible for 60 seconds.</description>
-		<groupDef>ESCP_Birthsigns_AbilityGroup_GreaterPower</groupDef>
-		<iconPath>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheShadow</iconPath>
-		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BirthsignAbility_MorrowRim_TheShadow</warmupMoteSocialSymbol>
-		<comps>
-			<li Class="CompProperties_AbilityGiveHediff">
-				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>MorrowRim_Birthsign_Moonshadow_RimWorld</hediffDef>
-			</li>
-		</comps>
-		<statBases>
-			<Ability_Duration>60</Ability_Duration>
 		</statBases>
 	</AbilityDef>
 </Defs>
