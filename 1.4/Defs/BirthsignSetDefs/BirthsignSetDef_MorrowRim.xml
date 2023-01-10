@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ESCP_Birthsigns.BirthsignSetDef>
+	<!-- ==========[The ESCP_MorrowRimBirthsigns_RimWorld]========== -->
+	<!--
+		- Require Royalty
+	-->
+	<ESCP_Birthsigns.BirthsignSetDef ParentName="ESCP_Birthsigns_Base">
 		<defName>ESCP_MorrowRimBirthsigns_RimWorld</defName>
 		<label>MorrowRim - RimWorld style Birthsigns</label>
 		<description>Birthsigns from Morrowind, modified to fit into RimWorld.</description>
-		<overridenQuadrumNames>
-			<li>Rain's Seed</li>
-			<li>Sun's Seed</li>
-			<li>Hearthfall</li>
-			<li>Sun's Star</li>
-		</overridenQuadrumNames>
-		<overridenQuadrumNamesShort>
-			<li>Rain</li>
-			<li>Sun</li>
-			<li>Hearth</li>
-			<li>Star</li>
-		</overridenQuadrumNamesShort>
 		<birthsignHediffs>
 			<li>
 				<li>MorrowRim_Birthsign_TheRitual_RimWorld</li>
@@ -41,7 +33,5 @@
 		<additionalSigns>
 			<li>MorrowRim_Birthsign_TheSerpent_RimWorld</li>
 		</additionalSigns>
-		<additionalSignsChance>0.08</additionalSignsChance>
-		<hasBirthsign_DefaultChance>0.25</hasBirthsign_DefaultChance>
 	</ESCP_Birthsigns.BirthsignSetDef>
 </Defs>

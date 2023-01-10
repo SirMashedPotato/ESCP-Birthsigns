@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[The Ritual]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheRitual_RimWorldPassive</defName>
+		<label>birthsign (The Ritual)</label>
+		<description>Those born under the sign of The Ritual are said to be blessed by Mara. They are naturally more resilient against diseases and infections, and boast an increased healing ability. The light of Mara also radiates from within them, making it easier for them to sway others to their side.\n\n&lt;color=#E5E54C&gt;Blessed Word&lt;/color&gt;\nConversion power is increased by 15%.\n\n&lt;color=#E5E54C&gt;Mara's Gift&lt;/color&gt;\nImmunity gain speed is increased by 15%.\nInjury healing factor is increased by 15%.</description>
+		<descriptionShort>Those born under the sign of The Ritual are said to be blessed by Mara. They are naturally more resilient against diseases and infections, and boast an increased healing ability. The light of Mara also radiates from within them, making it easier for them to sway others to their side.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<ConversionPower>0.15</ConversionPower>
+					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.15</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Lover]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheLover_RimWorldPassive</defName>
+		<label>birthsign (The Lover)</label>
+		<description>Those born under the sign of The Lover are both nimble and accurate, and often leave a lasting impression on those they interact with.\n\n&lt;color=#E5E54C&gt;Mooncalf&lt;/color&gt;\nMelee hit chance is increased by 2.5 points.\nMelee dodge chance is increased by 2.5 points.\nShooting accuracy is increased by 2.5 points.\n\n&lt;color=#E5E54C&gt;Lover's Kiss&lt;/color&gt;\nSocial impact is increased by 15%.</description>
+		<descriptionShort>Those born under the sign of The Lover are both nimble and accurate, and often leave a lasting impression on those they interact with.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>2.5</MeleeHitChance>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+					<ShootingAccuracyPawn>2.5</ShootingAccuracyPawn>
+					<SocialImpact>0.15</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Lord]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheLord_RimWorldPassive</defName>
+		<label>birthsign (The Lord)</label>
+		<description>Those born under the sign of The Lord naturally heal wounds at a much faster rate, but are highly susceptible to flame.\n\n&lt;color=#E5E54C&gt;Blood of the North&lt;/color&gt;\nInjury healing factor is increased by 50%.\n\n&lt;color=#E5E54C&gt;Trollkin&lt;/color&gt;\nFlammability is increased by 100%.</description>
+		<descriptionShort>Those born under the sign of The Lord are able to quickly restore health, but are highly susceptible to flame.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<Flammability>1</Flammability>
+					<InjuryHealingFactor>0.5</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Shadow]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheShadow_RimWorldPassive</defName>
+		<label>birthsign (The Shadow)</label>
+		<description>Those born under the sign of The Shadow are highly adept at blending into their surroundings, especially in poorly lit environments.\n\n&lt;color=#E5E54C&gt;Moonshadow&lt;/color&gt;\nShooting accuracy is increased by 15% in dark environments.\nMelee dodge chance is increased by 15% in dark environments.\nMelee hit chance is increased by 15% in dark environments.</description>
+		<descriptionShort>Those born under the sign of The Shadow are highly adept at blending into their surroundings, especially in poorly lit environments.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</ShootingAccuracyIndoorsDarkOffset>
+					<MeleeHitChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</MeleeHitChanceOutdoorsDarkOffset>
+					<MeleeHitChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</MeleeHitChanceIndoorsDarkOffset>
+					<MeleeDodgeChanceOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</MeleeDodgeChanceOutdoorsDarkOffset>
+					<MeleeDodgeChanceIndoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</MeleeDodgeChanceIndoorsDarkOffset>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Tower]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheTower_RimWorldPassive</defName>
+		<label>birthsign (The Tower)</label>
+		<description>Those born under the sign of The Tower are both resilient to anything that would dare attempt to topple them, and adept at entering places they are not meant to.\n\n&lt;color=#E5E54C&gt;Tower Key&lt;/color&gt;\nHacking speed is increased by 25%.\n\n&lt;color=#E5E54C&gt;Tower Warden&lt;/color&gt;\nAll incoming damage is reduced by 15%.</description>
+		<descriptionShort>Those born under the sign of The Tower are both resilient to anything that would dare attempt to topple them, and adept at entering places they are not meant to.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+					<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.25</HackingSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- ==========[The Serpent]========== -->
+	<HediffDef ParentName="ESCP_BirthsignBase">
+		<defName>MorrowRim_Birthsign_TheSerpent_RimWorldPassive</defName>
+		<label>birthsign (The Serpent)</label>
+		<description>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.\n\n&lt;color=#E5E54C&gt;Star Curse&lt;/color&gt;\nToxic resistance is increased by 30%.</description>
+		<descriptionShort>Those born under the wandering sign of The Serpent seemingly have nothing in common. Some believe they are blessed, others that they are cursed.</descriptionShort>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>0.30</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

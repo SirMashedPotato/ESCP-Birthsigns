@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[The ESCP_MorrowRimBirthsigns_RimWorldPassive]========== -->
+	<!--
+		- Require Royalty
+		- Requires Ideology
+	-->
+	<ESCP_Birthsigns.BirthsignSetDef ParentName="ESCP_Birthsigns_Base">
+		<defName>ESCP_PassiveBirthsigns_RimWorld</defName>
+		<label>ESCP - RimWorld style Birthsigns (Passive only)</label>
+		<description>Morrowind style birthsigns modified to fit into RimWorld, and without any fancy abilities</description>
+		<birthsignHediffs>
+			<li>
+				<li>MorrowRim_Birthsign_TheRitual_RimWorldPassive</li>
+				<li>MorrowRim_Birthsign_TheLover_RimWorldPassive</li>
+				<li>MorrowRim_Birthsign_TheLord_RimWorldPassive</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheMage_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheShadow_RimWorldPassive</li>
+				<li>MorrowRim_Birthsign_TheSteed_RimWorld</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheApprentice_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheWarrior_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheLady_RimWorld</li>
+			</li>
+			<li>
+				<li>MorrowRim_Birthsign_TheTower_RimWorldPassive</li>
+				<li>MorrowRim_Birthsign_TheAtronach_RimWorld</li>
+				<li>MorrowRim_Birthsign_TheThief_RimWorld</li>
+			</li>
+		</birthsignHediffs>
+		<additionalSigns>
+			<li>MorrowRim_Birthsign_TheSerpent_RimWorldPassive</li>
+		</additionalSigns>
+		<hasBirthsign_DefaultChance>1</hasBirthsign_DefaultChance>
+	</ESCP_Birthsigns.BirthsignSetDef>
+</Defs>
